@@ -22,7 +22,7 @@ function login(){
 
 	if ((nombre.toLowerCase() == "hola") && (contrasena.toLowerCase() == "hola")){
 		window.alert("Login complete");
-		window.location.href="./home.html";
+		window.location.href="./index.html";
 	}
 }
 
@@ -35,7 +35,7 @@ function goToNews(){
 function goToHome(){
 	document.getElementById("buttonSound").play();
 	setTimeout(function(){
-    window.location.href="./home.html";
+    window.location.href="./index.html";
 	},300);
 }
 function goToForums(){
