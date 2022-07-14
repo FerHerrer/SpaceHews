@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>SPACE NEWS & INFO - News</title>
-	<link rel="shortcut icon" href="https://images.vexels.com/media/users/3/188956/isolated/preview/2bd31dbc4d96db4f5d736267513e75f2-colorido-trazo-del-planeta-saturno.png">
+	<link rel="shortcut icon" href="./icon.png">
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,27 +15,29 @@
 </head>
 
 <body>
-	<div id="menu">
+	<audio src="./button-30.mp3" type="audio/mpeg" id="buttonSound"></audio>
+
+	<div id="overlay" class="overlay">
 		<table>	
 			<tr>
 				<td id="casillaImg">
-					<img src="https://images.vexels.com/media/users/3/188956/isolated/preview/2bd31dbc4d96db4f5d736267513e75f2-colorido-trazo-del-planeta-saturno.png" id="icon">
+					<img src="./icon.png" id="icon">
 				</td>
-				<td id="casilla" align="center">
-					<a href="./home.html">HOME</a>
+				<td id="casilla" align="center" onclick="goToHome()">
+					<p id="menu" align="center">HOME</p>
 				</td>
 				<td id="casillaPag" align="center">
-					<a href="./news.html">NEWS</a>
+					<p id="menu" align="center">NEWS</p>
 				</td>
-				<td id="casilla" align="center">
-					<a href="./info.html">INFO</a>				
+				<td id="casilla" align="center" onclick="goToInfo()">
+					<p id="menu" align="center">INFO</p>				
 				</td>
-				<td id="casilla" align="center">
-					<a href="./forums.html">FORUMS</a>
+				<td id="casilla" align="center"onclick="goToForums()">
+					<p id="menu" align="center">COMMUNITY</p>
 				</td>
 				<td id="casillaSearch" align="right">
-					<input type="search" id="searchInGoogle">
-					<button onclick="searchInGoogle()">Search</button>
+					<input type="search" id="search">
+					<button onclick="findInPage(buscar)">Search</button>
 				</td>
 			</tr>
 		</table>
@@ -49,18 +51,60 @@
 	<br>
 	<br>
 
-	<a href="./noticia.html" id="noticia">NASA Completes Wet Dress Rehearsal, Moves Forward Toward Launch (Jun 24, 2022)</a>
+	<div>
+		<h2>UPDATES</h2>
 
-	<br>
-	<br>
-	<br>
+		<br>
+		<br>
+		<br>
 
-	<a href="./noticia.html" id="noticia">NASA Completes Wet Dress Rehearsal, Moves Forward Toward Launch (Jun 24, 2022)</a>
+		<a href="https://www.nasa.gov/feature/nasa-completes-wet-dress-rehearsal-moves-forward-toward-launch" target ="_blank" id="noticia">NASA Completes Wet Dress Rehearsal, Moves Forward Toward Launch (Jun 24, 2022 - NASA)</a>
 
-	<br>
-	<br>
-	<br>
+		<br>
+		<br>
+		<br>
 
-	<a href="./noticia.html" id="noticia">NASA Completes Wet Dress Rehearsal, Moves Forward Toward Launch (Jun 24, 2022)</a>
+		<a href="https://www.reuters.com/technology/rocket-booster-bursts-into-flames-spacex-plant-during-test-firing-2022-07-12" target ="_blank" id="noticia">Test-fired booster rocket bursts into flames at SpaceX plant (Jul 12, 2022 - Reuters)</a>
+
+		<br>
+		<br>
+		<br>
+
+		<a href="https://spacenews.com/oneweb-backs-up-starlink-5g-interference-warning/" target ="_blank" id="noticia">OneWeb backs up Starlink 5G interference warning (Jul 12, 2022 - SpaceNews)</a>
+
+		<br>
+		<br>
+		<br>
+	</div>
+	<div>
+		<h2>LAUNCHES</h2>
+
+		<br>
+		<br>
+		<br>
+
+		<a href="https://www.nytimes.com/2022/06/28/science/capstone-nasa-launch-moon.html" target ="_blank" id="noticia">NASA’s CAPSTONE Mission Launches to the Moon (Jun 28, 2022 - The New York Times)</a>
+
+		<br>
+		<br>
+		<br>
+	</div>
+	<div>
+		<h2>DISCOVERIES</h2>
+
+		<br>
+		<br>
+		<br>
+
+		<a href="https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet" target ="_blank" id="noticia">NASA’s Webb Delivers Deepest Infrared Image of Universe Yet (Jul 12, 2022 - NASA)</a>
+
+		<br>
+		<br>
+		<br>
+	</div>
+	
+	<br>
+	<br>
+	<br>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>SPACE NEWS & INFO - Info</title>
-	<link rel="shortcut icon" href="https://images.vexels.com/media/users/3/188956/isolated/preview/2bd31dbc4d96db4f5d736267513e75f2-colorido-trazo-del-planeta-saturno.png">
+	<link rel="shortcut icon" href="./icon.png">
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,27 +15,29 @@
 </head>
 
 <body>
-	<div id="menu">
+	<audio src="./button-30.mp3" type="audio/mpeg" id="buttonSound"></audio>
+
+	<div id="overlay" class="overlay">
 		<table>	
 			<tr>
 				<td id="casillaImg">
-					<img src="https://images.vexels.com/media/users/3/188956/isolated/preview/2bd31dbc4d96db4f5d736267513e75f2-colorido-trazo-del-planeta-saturno.png" id="icon">
+					<img src="./icon.png" id="icon">
 				</td>
-				<td id="casilla" align="center">
-					<a href="./home.html">HOME</a>
+				<td id="casilla" align="center" onclick="goToHome()">
+					<p id="menu" align="center">HOME</p>
 				</td>
-				<td id="casilla" align="center">
-					<a href="./news.html">NEWS</a>
+				<td id="casilla" align="center" onclick="goToNews()">
+					<p id="menu" align="center">NEWS</p>
 				</td>
 				<td id="casillaPag" align="center">
-					<a href="./info.html">INFO</a>				
+					<p id="menu" align="center">INFO</p>				
 				</td>
-				<td id="casilla" align="center">
-					<a href="./forums.html">FORUMS</a>
+				<td id="casilla" align="center" onclick="goToForums()">
+					<p id="menu" align="center">COMMUNITY</p>
 				</td>
 				<td id="casillaSearch" align="right">
-					<input type="search" id="searchInGoogle">
-					<button onclick="searchInGoogle()">Search</button>
+					<input type="search" id="search">
+					<button onclick="findInPage(buscar)">Search</button>
 				</td>
 			</tr>
 		</table>
@@ -49,15 +51,42 @@
 	<br>
 	<br>
 	<br>
+	<br>
+	<br>
 
 	<div align="center">
-		<h2>Search articles:</h2>
+		<h3 id="searchArticlesH">Search articles in:</h3>
 		<input type="search" name="search" id="searchArticles">
+		<button onclick="searchInGoogle()">Google</button>
+		<button onclick="searchInWikipedia()">Wikipedia</button>
 	</div>
 
 	<br>
 	<br>
 	<br>
+	<br>
+	<br>
+	<br>
+
+	<div>
+
+		<h2>RECCOMENDED ARTICLES</h2>
+
+		<br>
+		<br>
+		<br>
+
+		<a href="https://everydayastronaut.com/rocket-engine-cycles/" target ="_blank" id="noticia">Rocket Engine Cycles (Andy Law)
+	</a>
+
+		<br>
+		<br>
+		<br>
+
+		<a href="https://everydayastronaut.com/engine-cooling-methodes/" target ="_blank" id="noticia">Engine Cooling – Why Rocket Engines Don’t Melt (Claire Percival)
+	</a>
+
+	</div>
 
 </body>
 </html>
