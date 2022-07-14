@@ -30,28 +30,30 @@ function goToNews(){
 	document.getElementById("buttonSound").play();
 	setTimeout(function(){
     window.location.href="./news.html";
-	},300);
+	},280);
 }
 function goToHome(){
 	document.getElementById("buttonSound").play();
 	setTimeout(function(){
     window.location.href="./index.html";
-	},300);
+	},280);
 }
 function goToForums(){
 	document.getElementById("buttonSound").play();
 	setTimeout(function(){
     window.location.href="./community.html";
-	},300);
+	},280);
 }
 function goToInfo(){
 	document.getElementById("buttonSound").play();
 	setTimeout(function(){
     window.location.href="./info.html";
-	},300);
+	},280);
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//JS del buscador de la propia página
 
 /*
 var buscar = document.getElementById("search").value;
@@ -73,56 +75,88 @@ function findInPage(buscar) {
 
 	if (NS4) {
 
-	// Look for match starting at the current point. If not found, rewind
-	// back to the first match.
+		// Look for match starting at the current point. If not found, rewind
+		// back to the first match.
 
-	if (!win.find(buscar))
-	while(win.find(buscar, false, true))
-	n++;
-	else
-	n++;
+		if (!win.find(buscar))
+		while(win.find(buscar, false, true))
+		n++;
+		else
+		n++;
 
-	// If not found in either direction, give message.
+		// If not found in either direction, give message.
 
-	if (n == 0)
-	alert("Not found.");
-	}
+		if (n == 0)
+			alert("Not found.");
+		}
 
-	if (IE4) {
-	txt = win.document.body.createTextRange();
+		if (IE4) {
+			txt = win.document.body.createTextRange();
 
-	// Find the nth match from the top of the page.
+		// Find the nth match from the top of the page.
 
-	for (i = 0; i <= n && (found = txt.findText(buscar)) != false; i++) {
-	txt.moveStart("character", 1);
-	txt.moveEnd("textedit");
-	}
+		for (i = 0; i <= n && (found = txt.findText(buscar)) != false; i++) {
+			txt.moveStart("character", 1);
+			txt.moveEnd("textedit");
+		}
 
-	// If found, mark it and scroll it into view.
+		// If found, mark it and scroll it into view.
 
-	if (found) {
-	txt.moveStart("character", -1);
-	txt.findText(buscar);
-	txt.select();
-	txt.scrollIntoView();
-	n++;
-	}
+		if (found) {
+			txt.moveStart("character", -1);
+			txt.findText(buscar);
+			txt.select();
+			txt.scrollIntoView();
+			n++;
+		}
 
-	// Otherwise, start over at the top of the page and find first match.
+		// Otherwise, start over at the top of the page and find first match.
 
-	else {
-	if (n > 0) {
-	n = 0;
-	findInPage(buscar);
-	}
+		else {
+			if (n > 0) {
+			n = 0;
+			findInPage(buscar);
+		}
 
-	// Not found anywhere, give message.
+		// Not found anywhere, give message.
 
-	else
-	alert("Not found.");
-	}
+		else
+			alert("Not found.");
+		}
 	}
 
 	return false;
 }
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//HTML del Login
+
+/*
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<h1>SPACE NEWS & INFO</h1>
+
+	<br>
+	<br>
+
+	<div align="center">
+		<p>Nombre de usuario</p>
+		<input type="name" id="nombre">
+		<p>Contraseña</p>
+		<input type="password" id="contraseña">
+		<br>
+		<br>
+		<button onclick="login()">Iniciar sesión</button>
+	</div>
+</body>
 */
