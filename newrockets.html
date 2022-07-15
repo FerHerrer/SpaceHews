@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPACE NEWS & INFO - Home</title>
+	<link rel="shortcut icon" href="./icon.png">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+	<audio src="./button-30.mp3" type="audio/mpeg" id="buttonSound"></audio>
+
+	<div id="overlay" class="overlay">
+		<table>
+			<tr>
+				<td id="casillaImg">
+					<img src="./icon.png" id="icon">
+				</td>
+				<td id="casilla" align="center" onclick="goToHome()">
+					<p id="menu" align="center">HOME</p>
+				</td>
+				<td id="casilla" align="center" onclick="goToNews()">
+					<p id="menu" align="center">NEWS</p>
+				</td>
+				<td id="casilla" align="center" onclick="goToInfo()">
+					<p id="menu" align="center">INFO</p>
+				</td>
+				<td id="casilla" align="center" onclick="goToForums()">
+					<p id="menu" align="center">COMMUNITY</p>
+				</td>
+				<td id="casillaPag" align="center" onclick="goToNewRockets()">
+					<p id="menu" align="center">NEW ROCKETS</p>
+				</td>
+				<td id="casillaSearch" align="right">
+					<input type="search" id="search">
+					<button onclick="findInPage(buscar)">Search</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<br>
+	<br>
+
+	<h1>NEW ROCKETS</h1>
+
+	<br>
+	<br>
+
+	<h2>SpaceX STARSHIP</h2>
+
+	<p id="newrockets">SpaceX’s Starship spacecraft and Super Heavy rocket (collectively referred to as Starship) represent a fully reusable transportation system designed to carry both crew and cargo to Earth orbit, the Moon, Mars and beyond. Starship will be the world’s most powerful launch vehicle ever developed, with the ability to carry in excess of 100 metric tonnes to Earth orbit.</p>
+	<p id="newrockets">Starship. Starship is the fully reusable spacecraft and second stage of the Starship system. It offers an integrated payload section and is capable of carrying passengers and cargo to Earth orbit, planetary destinations, and between destinations on Earth.</p>
+	<p id="newrockets">Super Heavy. The first stage, or booster, of our next-generation launch system has a gross liftoff mass of over 3 million kg and uses sub-cooled liquid methane and liquid oxygen (CH4/LOX) propellants. The booster will return to land at the launch site on its 6 legs.</p>
+
+	<br>
+
+	<img src="./starship.jpg" id="starship" align="center">
+
+	<br>
+	<br>
+
+	<h2>Blue Origin NEW GLENN</h2>
+
+	<P id="newrockets">Named after pioneering astronaut John Glenn, New Glenn is a single configuration heavy-lift launch vehicle capable of carrying people and payloads routinely to Earth orbit and beyond. Featuring a reusable first stage built for 25 missions, New Glenn will build a road to space.</P>
+	<P id="newrockets">Decreased Costs, Increased Access. New Glenn's fully reusable first stage is designed for a minimum of 25 flights, making it competitive for a variety of launch markets. Civil, commercial and national security customers can all find solutions in New Glenn's high-performance configuratioN.</P>
+	<P id="newrockets">High Availability Launch Capabilities. New Glenn is a reliable, cost-competitive system with high availability. The 7-meter fairing has two times the payload volume of any existing launch vehicle, which means more room for satellites and the freedom to build in more capacity. New Glenn is also able to launch and land in 95% of weather conditions, making it a reliable option for payload customers.</P>
+
+	<br>
+
+	<img src="./newglenn.png" id="newglenn" align="center">
+</body>
+</html>

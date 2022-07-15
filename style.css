@@ -19,7 +19,15 @@ h2{
 table{
 	width: 100%;
 }
-
+p#newrockets{
+	color: #ffffff;
+	font-size: 150%; 
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+	font-family: "Arial";
+}
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /*Overlay*/
@@ -70,7 +78,7 @@ img#icon{
 /*Menu de Home*/
 
 /*Titulos del menú de Home*/
-h2#mainmenutitle{
+h2#right{
 	text-align: left;
 }
 h2#left{
@@ -80,7 +88,7 @@ h2#left{
 td#left{
 	width: 50%;
 }
-img#news{
+img#mainmenu{
 	width: 70%;
 }
 p#left{
@@ -137,4 +145,14 @@ a#creator{
 	color: #ffffff;
 	margin-left: 15%;
 	font-size:150%;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+img#starship{
+	width: 50%;
+	margin-left: 15%;
+}
+img#newglenn{
+	width: 50%;
+	margin-left: 15%;
 }

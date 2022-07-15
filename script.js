@@ -16,7 +16,7 @@ function searchInWikipedia(){
 	}
 }
 //Login
-function login(){
+/*function login(){
 	var nombre = document.getElementById("nombre").value;
 	var contrasena = document.getElementById("contraseña").value;
 
@@ -24,7 +24,7 @@ function login(){
 		window.alert("Login complete");
 		window.location.href="./index.html";
 	}
-}
+}*/
 
 function goToNews(){
 	document.getElementById("buttonSound").play();
@@ -48,6 +48,12 @@ function goToInfo(){
 	document.getElementById("buttonSound").play();
 	setTimeout(function(){
     window.location.href="./info.html";
+	},280);
+}
+function goToNewRockets(){
+	document.getElementById("buttonSound").play();
+	setTimeout(function(){
+    window.location.href="./newrockets.html";
 	},280);
 }
 
